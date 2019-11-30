@@ -5,7 +5,7 @@ Este é o repositório do Futcomp. Um projeto desenvolvido durante as atividade 
 
 # Arquivos
 
-Aqui você encontrará os códigos e funções JavaScript.
+Aqui você encontrará os códigos da versão JavaScript do Futcomp.
 ## Desenvolvido por:
 
 Carlos Lemos;
