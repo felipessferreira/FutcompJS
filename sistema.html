@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FUTCOMP</title>
+<!-- IMPORTACAO DO CSS -->
+<link href="css/fut.css" rel="stylesheet">
+<link href="css/resultado.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- LOGO-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+		<a class="navbar-brand js-scroll-trigger" >FutComp</a>
+	</div>
+	</nav>
+	
+<!-- IMAGENS -->
+	<header class="masthead">
+    <div class="container h-100">
+    <br></br>
+			<div class="meuGrid" id="img">
+			
+			<img src="css/times/avai.png" id="19" width=50 height=50 title="AVAI"/>
+			<img src="css/times/galo.png" id="10" width=50 height=50 title="ATLETICO MINEIRO"/>
+			<img src="css/times/pr.png" width=50 height=50 title="ATLETICO PARANAENSE"/>
+			<img src="css/times/bahia.png" width=50 height=50 title="BAHIA"/>
+			<img src="css/times/botafogo.png" width=50 height=50 title="BOTAFOGO"/>
+			<img src="css/times/ceara.png" width=50 height=50 title="CEARA"/>
+			<img src="css/times/chape.png" width=50 height=50 title="CHAPECOENSE"/>
+			<img src="css/times/corinthians.png" width=50 height=50 title="CORINTHIAS"/>
+			<img src="css/times/cruze.png" width=50 height=50 title="CRUZEIRO"/>
+			<img src="css/times/csa.png" width=50 height=50 title="CSA"/>
+			<img src="css/times/fla.png" width=50 height=50 title="FLAMENGO"/>
+			<img src="css/times/flu.png" width=50 height=50 title="FLUMINENSE"/>
+			<img src="css/times/forta.png" width=50 height=50 title="FORTALEZA"/>
+			<img src="css/times/gremio.png" width=50 height=50 title="GREMIO"/>
+			<img src="css/times/goias.png" width=50 height=50 title="GOIAS"/>
+			<img src="css/times/inter.png" width=50 height=50 title="INTERNACIONAL"/>
+			<img src="css/times/palmeiras.png" width=50 height=50 title="PALMEIRAS"/>
+			<img src="css/times/paulo.png" width=50 height=50 title="SÃO PAULO"/>
+			<img src="css/times/santos.png" width=50 height=50 title="SANTOS"/>
+			<img src="css/times/vasco.png" width=50 height=50 title="VASCO"/>
+			</div>
+			<br></br>
+			
+<!-- 1 Formulario de times -->
+			<form>
+			<div id="formulario">
+			<select title="ESCOLHA" id="timeCasa" class="times">
+			<option value="" disabled selected> Casa</option>
+			
+				<option id="19" value="35"> Avai</option>
+				<option id="10" value="63">Atlético Mineiro </option>
+				<option id="9" value="70">Athlético Paranaense </option>
+				<option id="6" value="68">Bahia</option>
+				<option id="12" value="55">Botafogo</option>
+				<option id="15" value="50">Ceará</option>
+				<option id="20" value="50">Chapecoense</option>
+				<option id="4" value="75">Corinthians </option>
+				<option id="17" value="60">Cruzeiro </option>
+				<option id="18" value="40">CSA</option>
+				<option id="1" value="90">Flamengo </option>
+				<option id="16" value="50">Fluminense </option>
+				<option id="14" value="52">Fortaleza </option>
+				<option id="8" value="75">Gremio </option>
+				<option id="11" value="58">Goiás</option>
+				<option id="5" value="75">Internacional </option>
+				<option id="2" value="85">Palmeiras </option>
+				<option id="7" value="72">São Paulo </option>
+				<option id="3" value="75">Santos </option>
+				<option id="13" value="55">Vasco </option>
+			</select>
+			
+<!-- 2 Formulario de times -->
+			<select title="ESCOLHA" id="timeVisitante" class="times">
+				<option value="" disabled selected> Visitante</option>
+				<option id="19" value="35"> Avai</option>
+				<option id="10" value="63">Atlético Mineiro </option>
+				<option id="9" value="70">Athlético Paranaense </option>
+				<option id="6" value="68">Bahia</option>
+				<option id="12" value="55">Botafogo</option>
+				<option id="15" value="50">Ceará </option>
+				<option id="20" value="50">Chapecoense</option>
+				<option id="4" value="75">Corinthians </option>
+				<option id="17" value="60">Cruzeiro </option>
+				<option id="18" value="40">CSA</option>
+				<option id="1" value="90">Flamengo </option>
+				<option id="16" value="50">Fluminense </option>
+				<option id="14" value="52">FORTALEZA </option>
+				<option id="8" value="75">Gremio </option>
+				<option id="11" value="58">Goiás</option>
+				<option id="5" value="75">Internacional </option>
+				<option id="2" value="85">Palmeiras </option>
+				<option id="7" value="72">São Paulo </option>
+				<option id="3" value="75">Santos </option>
+				<option id="13" value="55">Vasco </option>
+			</select>
+			</div>
+			
+			
+<!-- Botao Verificao  -->
+			</br>
+			<div id="formulario">
+		   <input type="button" value="Verificar Confronto" onClick="VerificarConfronto(this.form)" /> 
+        </div>
+	</form>
+	<br></br>
+	<br></br>
+	
+			<div id="divResultado">
+			<!--	Div onde o resultado do jogo será exibido  -->
+			
+		  </div>
+      </div>
+	</div>
+	
+  </header>
+
+  
+  
+
+<!-- RODAPE -->
+  <section class="page-section" id="rodape">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">FutComp</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Sistema desenvolvido pelos Alunos Carlos Matheus, Felipe Ferreira, Gabriel Ortega e 
+			Leonardo Meurer, no Centro Universitário Municipal de São José .</p>
+        </div>
+      </div>
+      
+        
+      </div>
+    </div>
+  </section>
+
+<!-- RODAPE -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright © 2019 FutComp. Todos os Direitos Reservados</div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/inteligencia.js"> </script>
+  
+</body>
+
+</html>
