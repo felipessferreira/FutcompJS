@@ -2,15 +2,15 @@
 function VerificarConfronto(form){
 	
 	var timeCasa = document.getElementById("timeCasa").value;
-    timeCasa = parseInt(timeCasa) + 15;
+    	timeCasa = parseInt(timeCasa) + 15;
 	var select = document.querySelector('select');
 	var option = select.children[select.selectedIndex];
 	var time1 = option.textContent;
 	
-    var timeVisitante = document.getElementById("timeVisitante").value;
+    	var timeVisitante = document.getElementById("timeVisitante").value;
 	var select = document.querySelector('#timeVisitante');
 	var option = select.children[select.selectedIndex];
-    var time2 = option.textContent;
+    	var time2 = option.textContent;
 	
 	if(time1 != time2){
 
