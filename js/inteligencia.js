@@ -1,6 +1,6 @@
 
 function VerificarConfronto(form){
-	debugger;
+	
 	var timeCasa = document.getElementById("timeCasa").value;
     timeCasa = parseInt(timeCasa) + 15;
 	var select = document.querySelector('select');
