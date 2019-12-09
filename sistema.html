@@ -47,51 +47,54 @@
 			<br></br>
 			
 <!-- 1 Formulario de times -->
+			<br></br>
 			<form>
 			<div id="formulario">
-			<select title="ESCOLHA" id="timeCasa" class="times">
+			<select title="ESCOLHA" id="timeCasa" class="btn btn-light">
 			<option value="" disabled selected> Casa</option>
 			
-				<option id="19" value="35"> Avai</option>
+				<option id="19" value="35"> Avai </option>
 				<option id="10" value="63">Atlético Mineiro </option>
 				<option id="9" value="70">Athlético Paranaense </option>
-				<option id="6" value="68">Bahia</option>
-				<option id="12" value="55">Botafogo</option>
-				<option id="15" value="50">Ceará</option>
-				<option id="20" value="50">Chapecoense</option>
+				<option id="6" value="68">Bahia </option>
+				<option id="12" value="55">Botafogo </option>
+				<option id="15" value="50">Ceará </option>
+				<option id="20" value="50">Chapecoense </option>
 				<option id="4" value="75">Corinthians </option>
 				<option id="17" value="60">Cruzeiro </option>
-				<option id="18" value="40">CSA</option>
+				<option id="18" value="40">CSA </option>
 				<option id="1" value="90">Flamengo </option>
 				<option id="16" value="50">Fluminense </option>
 				<option id="14" value="52">Fortaleza </option>
 				<option id="8" value="75">Gremio </option>
-				<option id="11" value="58">Goiás</option>
+				<option id="11" value="58">Goiás </option>
 				<option id="5" value="75">Internacional </option>
 				<option id="2" value="85">Palmeiras </option>
 				<option id="7" value="72">São Paulo </option>
 				<option id="3" value="75">Santos </option>
 				<option id="13" value="55">Vasco </option>
 			</select>
+		
 			
 <!-- 2 Formulario de times -->
-			<select title="ESCOLHA" id="timeVisitante" class="times">
+            
+			<select title="ESCOLHA" id="timeVisitante" class="btn btn-light" >
 				<option value="" disabled selected> Visitante</option>
-				<option id="19" value="35"> Avai</option>
+				<option id="19" value="35"> Avai </option>
 				<option id="10" value="63">Atlético Mineiro </option>
 				<option id="9" value="70">Athlético Paranaense </option>
-				<option id="6" value="68">Bahia</option>
-				<option id="12" value="55">Botafogo</option>
-				<option id="15" value="50">Ceará </option>
-				<option id="20" value="50">Chapecoense</option>
+				<option id="6" value="68">Bahia </option>
+				<option id="12" value="55">Botafogo </option>
+				<option id="15" value="50">Ceará  </option>
+				<option id="20" value="50">Chapecoense </option>
 				<option id="4" value="75">Corinthians </option>
 				<option id="17" value="60">Cruzeiro </option>
-				<option id="18" value="40">CSA</option>
+				<option id="18" value="40">CSA </option>
 				<option id="1" value="90">Flamengo </option>
 				<option id="16" value="50">Fluminense </option>
-				<option id="14" value="52">FORTALEZA </option>
+				<option id="14" value="52">Fortaleza </option>
 				<option id="8" value="75">Gremio </option>
-				<option id="11" value="58">Goiás</option>
+				<option id="11" value="58">Goiás </option>
 				<option id="5" value="75">Internacional </option>
 				<option id="2" value="85">Palmeiras </option>
 				<option id="7" value="72">São Paulo </option>
@@ -99,20 +102,23 @@
 				<option id="13" value="55">Vasco </option>
 			</select>
 			</div>
-			
+			<br></br>
 			
 <!-- Botao Verificao  -->
-			</br>
+			<br></br>
 			<div id="formulario">
-		   <input type="button" value="Verificar Confronto" onClick="VerificarConfronto(this.form)" /> 
+		   <input class="btn btn-primary btn-xl js-scroll-trigger" type="button" value="Verificar Confronto" onClick="VerificarConfronto(this.form)" /> 
+		   
         </div>
 	</form>
 	<br></br>
 	<br></br>
 	
-			<div id="divResultado">
+			 <!-- <div id="divResultado"> -->
 			<!--	Div onde o resultado do jogo será exibido  -->
+			<h2 id="divResultado" class="mt-0"></h2>
 			
+			 <hr class="divider my-4">
 		  </div>
       </div>
 	</div>
